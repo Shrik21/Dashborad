@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let saving of savings">
+      <app-savings [saving]="saving"></app-savings>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-8">
+      <app-recent-orders [recentOrders]="recentOrders"></app-recent-orders>
+    </div>
+    <div class="col-md-4">
+      <app-users [users]="users"></app-users>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <app-sales-statistics [salesStatistics]="salesStatistics"></app-sales-statistics>
+    </div>
+    <div class="col-md-3">
+      <app-balance-overview [balanceOverview]="balanceOverview"></app-balance-overview>
+    </div>
+    <div class="col-md-3">
+      <app-top-product [topProduct]="topProduct"></app-top-product>
+    </div>
+  </div>
+</div>

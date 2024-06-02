@@ -1,0 +1,7 @@
+<div *ngFor="let user of users" class="user-card">
+  <h4>{{ user.name }}</h4>
+  <p>{{ user.country }}</p>
+  <div class="progress-bar">
+    <div class="progress" [style.width.%]="user.completion">{{ user.completion }}%</div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Customer</th>
+      <th>Product</th>
+      <th>Delivery Date</th>
+      <th>Status</th>
+      <th>Tracking No</th>
+      <th>Shipping</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of recentOrders; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ order.customer }}</td>
+      <td>{{ order.product }}</td>
+      <td>{{ order.deliveryDate | date:'short' }}</td>
+      <td>{{ order.status }}</td>
+      <td>{{ order.trackingNo }}</td>
+      <td>{{ order.shipping }}</td>
+    </tr>
+  </tbody>
+</table>

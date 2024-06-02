@@ -1,0 +1,31 @@
+.user-card {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  color: gray;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress {
+  background: #4caf50;
+  height: 10px;
+  color: white;
+  text-align: center;
+  line-height: 10px;
+}
